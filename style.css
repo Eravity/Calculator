@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button,
+.ce-button,
+.del-button {
+  width: 3em;
+  height: 3em;
+  margin: 0.7em;
+  background: rgb(24, 24, 24);
+  border: none;
+  border-radius: 0.7em;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px #000000, -2px -2px 6px #3d3d3d;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: rgb(18, 18, 18);
+}
+
+#equal-button {
+  width: 3em;
+  height: 3em;
+  margin: 0.7em;
+  background: rgb(185, 93, 255);
+  border: none;
+  border-radius: 0.7em;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px #000000, -2px -2px 6px #3d3d3d;
+  color: white;
+}
+
+#equal-button:hover {
+  background: rgb(169, 63, 251);
+}
+
+.calculator-body {
+  background: rgb(24, 24, 24);
+  padding: 0.5em;
+  position: relative;
+  border-radius: 0 0 1.7em 1.7em;
+}
+
+.display {
+  width: 16.43em;
+  height: 13em;
+  background: rgb(24, 24, 24);
+  box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 1);
+  border-radius: 1.7em 1.7em 0.5em 0.5em;
+  position: relative;
+  bottom: -0.33em;
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  overflow: hidden;
+}
+
+.unit {
+  display: inline-block;
+  margin: 0 0.9em;
+  color: rgb(162, 162, 162);
+  font-size: 0.7rem;
+}
+
+.units {
+  width: 100%;
+  cursor: pointer;
+}
+
+#result {
+  margin: 0 0.5em 0.5em;
+  font-family: Arial;
+}
+
+#previous-op {
+  display: flex;
+  justify-content: center;
+  margin: 0 1em 0;
+  color: rgb(185, 93, 255);
+  font-family: Arial;
+}
